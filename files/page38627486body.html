@@ -1,0 +1,512 @@
+<!--allrecords--><div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="7657869" data-tilda-page-id="38627486" data-tilda-formskey="eed1e48a2c98e5f3a4cbca3b37657869" data-tilda-cookie="no" data-tilda-lazy="yes" data-tilda-project-headcode="yes"><div id="rec624380736" class="r t-rec" style=" " data-animationappear="off" data-record-type="257" ><!-- T228 --><div id="nav624380736marker"></div><div class="tmenu-mobile" ><div class="tmenu-mobile__container"><div class="tmenu-mobile__burgerlogo"><a href="https://up2date.ritms.online" style="color:#ffffff;"><img src="images/tild6535-3831-4831-b836-366366646334__image_1.png" class="tmenu-mobile__imglogo" imgfield="img" style="min-width:150px;" alt="RITMS UP2DATE"></a></div><button type="button" 
+class="t-menuburger t-menuburger_first " 
+aria-label="Навигационное меню" 
+aria-expanded="false"><span style="background-color:#0e74c0;"></span><span style="background-color:#0e74c0;"></span><span style="background-color:#0e74c0;"></span><span style="background-color:#0e74c0;"></span></button><script>function t_menuburger_init(recid) {
+var rec = document.querySelector('#rec' + recid);
+if (!rec) return;
+var burger = rec.querySelector('.t-menuburger');
+if (!burger) return;
+var isSecondStyle = burger.classList.contains('t-menuburger_second');
+if (isSecondStyle && !window.isMobile && !('ontouchend' in document)) {
+burger.addEventListener('mouseenter', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-unhovered');
+burger.classList.add('t-menuburger-hovered');
+});
+burger.addEventListener('mouseleave', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-hovered');
+burger.classList.add('t-menuburger-unhovered');
+setTimeout(function() {
+burger.classList.remove('t-menuburger-unhovered');
+}, 300);
+});
+}
+burger.addEventListener('click', function() {
+if (!burger.closest('.tmenu-mobile') &&
+!burger.closest('.t450__burger_container') &&
+!burger.closest('.t466__container') &&
+!burger.closest('.t204__burger') &&
+!burger.closest('.t199__js__menu-toggler')) {
+burger.classList.toggle('t-menuburger-opened');
+burger.classList.remove('t-menuburger-unhovered');
+}
+});
+var menu = rec.querySelector('[data-menu="yes"]');
+if (!menu) return;
+var menuLinks = menu.querySelectorAll('.t-menu__link-item');
+var submenuClassList = ['t978__menu-link_hook', 't978__tm-link', 't966__tm-link', 't794__tm-link', 't-menusub__target-link'];
+Array.prototype.forEach.call(menuLinks, function (link) {
+link.addEventListener('click', function () {
+var isSubmenuHook = submenuClassList.some(function (submenuClass) {
+return link.classList.contains(submenuClass);
+});
+if (isSubmenuHook) return;
+burger.classList.remove('t-menuburger-opened');
+});
+});
+menu.addEventListener('clickedAnchorInTooltipMenu', function () {
+burger.classList.remove('t-menuburger-opened');
+});
+}
+t_onReady(function() {
+t_onFuncLoad('t_menuburger_init', function(){t_menuburger_init('624380736');});
+});</script><style>.t-menuburger {
+position: relative;
+flex-shrink: 0;
+width: 28px;
+height: 20px;
+padding: 0;
+border: none;
+background-color: transparent;
+outline: none;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: transform .5s ease-in-out;
+cursor: pointer;
+z-index: 999;
+}
+/*---menu burger lines---*/
+.t-menuburger span {
+display: block;
+position: absolute;
+width: 100%;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .25s ease-in-out;
+height: 3px;
+background-color: #000;
+}
+.t-menuburger span:nth-child(1) {
+top: 0px;
+}
+.t-menuburger span:nth-child(2),
+.t-menuburger span:nth-child(3) {
+top: 8px;
+}
+.t-menuburger span:nth-child(4) {
+top: 16px;
+}
+/*menu burger big*/
+.t-menuburger__big {
+width: 42px;
+height: 32px;
+}
+.t-menuburger__big span {
+height: 5px;
+}
+.t-menuburger__big span:nth-child(2),
+.t-menuburger__big span:nth-child(3) {
+top: 13px;
+}
+.t-menuburger__big span:nth-child(4) {
+top: 26px;
+}
+/*menu burger small*/
+.t-menuburger__small {
+width: 22px;
+height: 14px;
+}
+.t-menuburger__small span {
+height: 2px;
+}
+.t-menuburger__small span:nth-child(2),
+.t-menuburger__small span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger__small span:nth-child(4) {
+top: 12px;
+}
+/*menu burger opened*/
+.t-menuburger-opened span:nth-child(1) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.t-menuburger-opened span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+.t-menuburger-opened span:nth-child(4) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(1) {
+top: 6px;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(4) {
+top: 18px;
+}
+.t-menuburger-opened.t-menuburger__small span:nth-child(1),
+.t-menuburger-opened.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+/*---menu burger first style---*/
+@media (hover), (min-width:0\0) {
+.t-menuburger_first:hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_first:hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+/*---menu burger second style---*/
+.t-menuburger_second span:nth-child(2),
+.t-menuburger_second span:nth-child(3) {
+width: 80%;
+left: 20%;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_second.t-menuburger-hovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-hovered span:nth-child(3) {
+animation: t-menuburger-anim 0.3s ease-out normal forwards;
+}
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(3) {
+animation: t-menuburger-anim2 0.3s ease-out normal forwards;
+}
+}
+.t-menuburger_second.t-menuburger-opened span:nth-child(2),
+.t-menuburger_second.t-menuburger-opened span:nth-child(3){
+left: 0;
+right: 0;
+width: 100%!important;
+}
+/*---menu burger third style---*/
+.t-menuburger_third span:nth-child(4) {
+width: 70%;
+left: unset;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_third:not(.t-menuburger-opened):hover span:nth-child(4) {
+width: 100%;
+}
+}
+.t-menuburger_third.t-menuburger-opened span:nth-child(4) {
+width: 0!important;
+right: 50%;
+}
+/*---menu burger fourth style---*/
+.t-menuburger_fourth {
+height: 12px;
+}
+.t-menuburger_fourth.t-menuburger__small {
+height: 8px;
+}
+.t-menuburger_fourth.t-menuburger__big {
+height: 18px;
+}
+.t-menuburger_fourth span:nth-child(2),
+.t-menuburger_fourth span:nth-child(3) {
+top: 4px;
+opacity: 0;
+}
+.t-menuburger_fourth span:nth-child(4) {
+top: 8px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__big span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(4) {
+top: 12px;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(1),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(4) {
+top: 4px;
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(2),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(3) {
+opacity: 1;
+}
+/*---menu burger animations---*/
+@keyframes t-menuburger-anim {
+0% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+50% {
+width: 100%;
+left: 0;
+right: 0;
+}
+100% {
+width: 80%;
+left: 0;
+right: 20%;
+}
+}
+@keyframes t-menuburger-anim2 {
+0% {
+width: 80%;
+left: 0;
+}
+50% {
+width: 100%;
+right: 0;
+left: 0;
+}
+100% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+}</style> </div></div><style>.tmenu-mobile {
+background-color: #111;
+display: none;
+width: 100%;
+top: 0;
+z-index: 990;
+}
+.tmenu-mobile_positionfixed {
+position: fixed;
+}
+.tmenu-mobile__text {
+color: #fff;
+}
+.tmenu-mobile__container {
+min-height: 64px;
+padding: 20px;
+position: relative;
+box-sizing: border-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.tmenu-mobile__list {
+display: block;
+}
+.tmenu-mobile__burgerlogo {
+display: inline-block;
+font-size: 24px;
+font-weight: 400;
+white-space: nowrap;
+vertical-align: middle;
+}
+.tmenu-mobile__imglogo {
+height: auto;
+display: block;
+max-width: 300px!important;
+box-sizing: border-box;
+padding: 0;
+margin: 0 auto;
+}
+@media screen and (max-width: 980px) {
+.tmenu-mobile__menucontent_hidden {
+display: none;
+height: 100%;
+}
+.tmenu-mobile {
+display: block;
+}
+}
+@media screen and (max-width: 980px) {
+#rec624380736 .tmenu-mobile {
+background-color: #ffffff;
+}
+#rec624380736 .t-menuburger {
+-webkit-order: 1;
+-ms-flex-order: 1;
+order: 1;
+}
+}</style><div id="nav624380736" class="t228 t228__positionfixed tmenu-mobile__menucontent_hidden" style="background-color: rgba(255,255,255,1); " data-bgcolor-hex="#ffffff" data-bgcolor-rgba="rgba(255,255,255,1)" data-navmarker="nav624380736marker" data-appearoffset="" data-bgopacity-two="90" data-menushadow="" data-bgopacity="1" data-bgcolor-rgba-afterscroll="rgba(255,255,255,0.90)" data-menu-items-align="center" data-menu="yes"><div class="t228__maincontainer " style=""><div class="t228__padding40px"></div><div class="t228__leftside"><div class="t228__leftcontainer"><a href="https://up2date.ritms.online" class="t228__imgwrapper" style="color:#ffffff;"><img class="t228__imglogo " 
+src="images/tild6535-3831-4831-b836-366366646334__image_1.png" 
+imgfield="img"
+style="max-height: 80px" alt="RITMS UP2DATE"
+></a></div></div><div class="t228__centerside "></div><div class="t228__rightside"><div class="t228__rightcontainer"><div class="t228__right_langs"><div class="t228__right_buttons_wrap"><div class="t228__right_langs_lang"><a style="color:#000000;font-weight:400;opacity: 0.5;" href="">En</a></div><div class="t228__right_langs_lang"><a style="color:#000000;font-weight:400;" href="/ru/">Ru</a></div></div></div></div></div><div class="t228__padding40px"></div></div></div><style>@media screen and (max-width: 980px) {
+#rec624380736 .t228__leftcontainer{
+display: none;
+}
+}</style><style>@media screen and (max-width: 980px) {
+#rec624380736 .t228 {
+position: static;
+}
+}</style><script>window.addEventListener('load', function () {
+t_onFuncLoad('t228_setWidth', function () {
+t228_setWidth('624380736');
+});
+});
+window.addEventListener('resize', t_throttle(function () {
+t_onFuncLoad('t228_setWidth', function () {
+t228_setWidth('624380736');
+});
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('624380736', '.t228');
+});
+}));
+t_onReady(function () {
+t_onFuncLoad('t_menu__highlightActiveLinks', function () {
+t_menu__highlightActiveLinks('.t228__list_item a');
+});
+t_onFuncLoad('t_menu__findAnchorLinks', function () {
+t_menu__findAnchorLinks('624380736', '.t228__list_item a');
+});
+t_onFuncLoad('t228__init', function () {
+t228__init('624380736');
+});
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('624380736', '.t228');
+});
+t_onFuncLoad('t_menu__interactFromKeyboard', function () {
+t_menu__interactFromKeyboard('624380736');
+});
+t_onFuncLoad('t228_setWidth', function () {
+t228_setWidth('624380736');
+});
+t_onFuncLoad('t_menu__changeBgOpacity', function () {
+t_menu__changeBgOpacity('624380736', '.t228');
+window.addEventListener('scroll', t_throttle(function () {
+t_menu__changeBgOpacity('624380736', '.t228');
+}));
+});
+t_onFuncLoad('t_menu__createMobileMenu', function () {
+t_menu__createMobileMenu('624380736', '.t228');
+});
+});</script><!--[if IE 8]><style>#rec624380736 .t228 {
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9ffffff', endColorstr='#D9ffffff');
+}</style><![endif]--><style>@media (hover), (min-width:0\0) {
+#rec624380736 .t-btn:not(.t-animate_no-hover):hover,
+#rec624380736 .t-btn:not(.t-animate_no-hover):focus-visible {
+background: #0e74c0 !important;
+}
+#rec624380736 .t-btn:not(.t-animate_no-hover){
+-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out; transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+#rec624380736 .t-btntext:not(.t-animate_no-hover):hover{
+}
+}</style><style>#rec624380736 .t-menu__link-item{
+}
+@supports (overflow:-webkit-marquee) and (justify-content:inherit)
+{
+#rec624380736 .t-menu__link-item,
+#rec624380736 .t-menu__link-item.t-active {
+opacity: 1 !important;
+}
+}</style></div><div id="rec624380675" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-animationappear="off" data-record-type="204" ><!-- cover --><div class="t-cover"
+id="recorddiv624380675"
+bgimgfield="img"
+style="height:40vh; background-image:url('images/tild6237-6464-4639-b437-376536313164__-__resize__20x__jorge-ramirez-2bj2oh.jpg');"
+><div class="t-cover__carrier" id="coverCarry624380675"data-content-cover-id="624380675"data-content-cover-bg="images/tild6237-6464-4639-b437-376536313164__jorge-ramirez-2bj2oh.jpg"data-display-changed="true"data-content-cover-height="40vh"data-content-cover-parallax="fixed"style="height:40vh; "itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild6237-6464-4639-b437-376536313164__jorge-ramirez-2bj2oh.jpg"></div><div class="t-cover__filter" style="height:40vh;background-image: -moz-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: -o-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: -ms-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#4c000000', endColorstr='#4c000000');"></div><div class="t-container"><div class="t-col t-col_8"><div class="t-cover__wrapper t-valign_middle" style="height:40vh; position: relative;z-index: 1;"><div class="t181"><div data-hook-content="covercontent"><div class="t181__wrapper"><h1 class="t181__title t-title t-title_md" style="" field="title"><div style="font-size: 62px;" data-customstyle="yes">Meet RITMS Platform</div></h1><div class="t181__descr t-descr t-descr_lg " style="" field="descr"><div style="font-size: 36px;" data-customstyle="yes"><span style="color: rgb(255, 255, 255);">Cloud-Native Governance </span><br /><span style="color: rgb(255, 255, 255);">for Autonomous Devices</span></div></div></div></div></div></div></div></div></div></div><div id="rec624385415" class="r t-rec t-rec_pt_135 t-rec_pb_45" style="padding-top:135px;padding-bottom:45px;background-color:#ffffff; " data-animationappear="off" data-record-type="923" data-bg-color="#ffffff"><!-- t923 --><div class="t923 "><div class="t-slds" style="visibility: hidden;" aria-roledescription="carousel" aria-label="Слайдер"><div class="t-slds__main t-container"><ul role="list" class="t-slds__arrow_container"><li class="t-slds__arrow_wrapper t-slds__arrow_wrapper-left" data-slide-direction="left"><button 
+type="button" 
+class="t-slds__arrow t-slds__arrow-left t-slds__arrow-withbg" 
+aria-controls="carousel_624385415" 
+aria-disabled="false" 
+aria-label="Предыдущий слайд"
+style="width: 40px; height: 40px;background-color: rgba(0,146,255,1);"><div class="t-slds__arrow_body t-slds__arrow_body-left" style="width: 10px;"><svg role="presentation" focusable="false" style="display: block" viewBox="0 0 10.6 18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polyline
+fill="none" 
+stroke="#ffffff"
+stroke-linejoin="butt" 
+stroke-linecap="butt"
+stroke-width="2" 
+points="1,1 9,9 1,17" 
+/></svg></div></button></li><li class="t-slds__arrow_wrapper t-slds__arrow_wrapper-right" data-slide-direction="right"><button 
+type="button" 
+class="t-slds__arrow t-slds__arrow-right t-slds__arrow-withbg" 
+aria-controls="carousel_624385415" 
+aria-disabled="false" 
+aria-label="Следующий слайд"
+style="width: 40px; height: 40px;background-color: rgba(0,146,255,1);"><div class="t-slds__arrow_body t-slds__arrow_body-right" style="width: 10px;"><svg role="presentation" focusable="false" style="display: block" viewBox="0 0 10.6 18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polyline
+fill="none" 
+stroke="#ffffff"
+stroke-linejoin="butt" 
+stroke-linecap="butt"
+stroke-width="2" 
+points="1,1 9,9 1,17" 
+/></svg></div></button></li> </ul><div class="t-slds__container"><div class="t-card__container t-slds__items-wrapper t-slds_animated-slow" 
+id="carousel_624385415" data-slider-items-in-row="3" data-slider-transition="500" data-slider-with-cycle="true" data-slider-correct-height="true" data-auto-correct-mobile-width="false"
+aria-live="off"><div class="t-card__col t-slds__item t-slds__item_active t-animate" data-animate-style="fadeindown" data-animate-chain="yes" data-slide-index="1" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="1 из 5"><div class="t923__width_12 t-margin_auto t-width"><div class="t923__slds-wrapper t-slds__wrapper t-align_center"><div class="t923__col t-col t-align_left" style="width: 360px"><div class="t923__wrapper" style="border-radius:10px;" data-blocks-per-row="3"><div class="t923__imgwrapper t923__imgwrapper_1-1" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild6131-3038-4534-b261-343765613236__main_pic.png"> <div class="t923__bgimg t-bgimg" data-original="images/tild6131-3038-4534-b261-343765613236__main_pic.png" style="background-image:url('images/tild6131-3038-4534-b261-343765613236__-__resizeb__20x__main_pic.png');" 
+bgimgfield="li_img__1571909339456"
+></div></div><div class="t923__content" style="background-color: #f3fbff;"><div class="t923__textwrapper t923__paddingsmall"><div class="t-card__title t-name t-name_md" field="li_title__1571909339456" style=""><div style="font-size: 30px; line-height: 40px;" data-customstyle="yes">RITMS UP2DATE</div></div><div class="t-card__descr t-descr t-descr_xxs" field="li_descr__1571909339456" style=""><div style="font-size: 20px;" data-customstyle="yes"><ul><li style="text-align: left;">Software and Firmware management</li><li style="text-align: left;">Scalable to millions of connected devices</li><li style="text-align: left;">API for Fleet management</li></ul></div></div></div><div class="t-card__btntext-wrapper t923__paddingsmall"><a href="https://up2date.ritms.online" class="t-card__link"><div class="t-card__btn-text t-btntext " style="color:#0092ff;font-weight:400;">Learn more</div></a></div></div></div></div></div></div></div><div class="t-card__col t-slds__item t-animate" data-animate-style="fadeindown" data-animate-chain="yes" data-slide-index="2" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="2 из 5"><div class="t923__width_12 t-margin_auto t-width"><div class="t923__slds-wrapper t-slds__wrapper t-align_center"><div class="t923__col t-col t-align_left" style="width: 360px"><div class="t923__wrapper" style="border-radius:10px;" data-blocks-per-row="3"><div class="t923__imgwrapper t923__imgwrapper_1-1" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3865-6434-4631-a238-396261393965__2.png"> <div class="t923__bgimg t-bgimg" data-original="images/tild3865-6434-4631-a238-396261393965__2.png" style="background-image:url('images/tild3865-6434-4631-a238-396261393965__-__resizeb__20x__2.png');" 
+bgimgfield="li_img__1571909341844"
+></div></div><div class="t923__content" style="background-color: #f3fbff;"><div class="t923__textwrapper t923__paddingsmall"><div class="t-card__title t-name t-name_md" field="li_title__1571909341844" style=""><div style="font-size: 30px; line-height: 40px;" data-customstyle="yes">RITMS AIST</div></div><div class="t-card__descr t-descr t-descr_xxs" field="li_descr__1571909341844" style=""><div style="font-size: 20px;" data-customstyle="yes">Manage your AI models on your smart devices remotely </div></div></div><div class="t-card__btntext-wrapper t923__paddingsmall"><a href="https://aist.ritms.online/en" class="t-card__link"><div class="t-card__btn-text t-btntext " style="color:#0092ff;font-weight:400;">Learn more</div></a></div></div></div></div></div></div></div><div class="t-card__col t-card__col_withoutbtn t-slds__item t-animate" data-animate-style="fadeindown" data-animate-chain="yes" data-slide-index="3" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="3 из 5"><div class="t923__width_12 t-margin_auto t-width"><div class="t923__slds-wrapper t-slds__wrapper t-align_center"><div class="t923__col t-col t-align_left" style="width: 360px"><div class="t923__wrapper" style="border-radius:10px;" data-blocks-per-row="3"><div class="t923__imgwrapper t923__imgwrapper_1-1" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3762-6232-4838-b839-393530343432__screenshot_2023-08-0.png"> <div class="t923__bgimg t-bgimg" data-original="images/tild3762-6232-4838-b839-393530343432__screenshot_2023-08-0.png" style="background-image:url('images/tild3762-6232-4838-b839-393530343432__-__resizeb__20x__screenshot_2023-08-0.png');" 
+bgimgfield="li_img__1691158872005"
+></div></div><div class="t923__content" style="background-color: #f3fbff;"><div class="t923__textwrapper t923__paddingsmall"><div class="t-card__title t-name t-name_md" field="li_title__1691158872005" style=""><div style="font-size: 30px;" data-customstyle="yes">RITMS OS</div></div><div class="t-card__descr t-descr t-descr_xxs" field="li_descr__1691158872005" style=""><div style="font-size: 20px; line-height: 24px;" data-customstyle="yes"><ul><li style="text-align: left;">Trusted boot (HSM supported)</li><li style="text-align: left;">Firmware Updates</li><li style="text-align: left;">Cloud connectivity</li></ul></div></div></div></div></div></div></div></div></div><div class="t-card__col t-card__col_withoutbtn t-slds__item t-animate" data-animate-style="fadeindown" data-animate-chain="yes" data-slide-index="4" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="4 из 5"><div class="t923__width_12 t-margin_auto t-width"><div class="t923__slds-wrapper t-slds__wrapper t-align_center"><div class="t923__col t-col t-align_left" style="width: 360px"><div class="t923__wrapper" style="border-radius:10px;" data-blocks-per-row="3"><div class="t923__imgwrapper t923__imgwrapper_1-1" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3765-3436-4263-a236-343935313931__4.png"> <div class="t923__bgimg t-bgimg" data-original="images/tild3765-3436-4263-a236-343935313931__4.png" style="background-image:url('images/tild3765-3436-4263-a236-343935313931__-__resizeb__20x__4.png');" 
+bgimgfield="li_img__1691163761383"
+></div></div><div class="t923__content" style="background-color: #f3fbff;"><div class="t923__textwrapper t923__paddingsmall"><div class="t-card__title t-name t-name_md" field="li_title__1691163761383" style=""><div style="font-size: 30px; line-height: 30px;" data-customstyle="yes">RITMS Provisioning</div></div><div class="t-card__descr t-descr t-descr_xxs" field="li_descr__1691163761383" style=""><div style="font-size: 20px; line-height: 24px;" data-customstyle="yes"><ul><li style="text-align: left;">Public Key Infrastructure</li><li style="text-align: left;">Certificate-based (X509, mTLS, HSM support)</li><li style="text-align: left;">Zero-cost device commissioning</li></ul></div></div></div></div></div></div></div></div></div><div class="t-card__col t-slds__item t-animate" data-animate-style="fadeindown" data-animate-chain="yes" data-slide-index="5" 
+role="group" 
+aria-roledescription="slide" 
+aria-label="5 из 5"><div class="t923__width_12 t-margin_auto t-width"><div class="t923__slds-wrapper t-slds__wrapper t-align_center"><div class="t923__col t-col t-align_left" style="width: 360px"><div class="t923__wrapper" style="border-radius:10px;" data-blocks-per-row="3"><div class="t923__imgwrapper t923__imgwrapper_1-1" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild6338-3936-4537-b163-396662633064__6.png"> <div class="t923__bgimg t-bgimg" data-original="images/tild6338-3936-4537-b163-396662633064__6.png" style="background-image:url('images/tild6338-3936-4537-b163-396662633064__-__resizeb__20x__6.png');" 
+bgimgfield="li_img__1691165002463"
+></div></div><div class="t923__content" style="background-color: #f3fbff;"><div class="t923__textwrapper t923__paddingsmall"><div class="t-card__title t-name t-name_md" field="li_title__1691165002463" style=""><div style="font-size: 30px;" data-customstyle="yes">Turnkey ML Apps development</div></div><div class="t-card__descr t-descr t-descr_xxs" field="li_descr__1691165002463" style=""><div style="font-size: 20px; line-height: 24px;" data-customstyle="yes">We will mark up unique data sets, help you choose the right ML model and develop software in the field of computer vision</div></div></div><div class="t-card__btntext-wrapper t923__paddingsmall"><a href="https://ml.ritms.online/en" class="t-card__link"><div class="t-card__btn-text t-btntext " style="color:#0092ff;font-weight:400;">Learn more</div></a></div></div></div></div></div></div></div></div></div></div></div><script>t_onReady(function() {
+t_onFuncLoad('t_sldsInit', function() {
+t_sldsInit('624385415');
+});
+});</script><style>#rec624385415 .t-slds__bullet_active .t-slds__bullet_body {
+background-color: #222 !important;
+}
+#rec624385415 .t-slds__bullet:hover .t-slds__bullet_body {
+background-color: #222 !important;
+}</style></div><!--[if (IE 8)|(IE 9)]><style>#rec624385415 .t923__slds-wrapper .t923__col{
+display: block;
+margin: 0 auto;
+float: none;
+}</style><![endif]--><script>t_onReady(function () {
+t_onFuncLoad('t923_init', function () {
+t923_init('624385415');
+});
+});</script></div><div id="rec624382332" class="r t-rec t-rec_pt_105 t-rec_pb_60" style="padding-top:105px;padding-bottom:60px; " data-record-type="463" ><!-- T463 --><div class="t463" id="t-footer_624382332"><div class="t463__maincontainer t463__c12collumns" ><div class="t463__content" style="padding-left:20px; padding-right: 20px;"><div class="t463__colwrapper"><div class="t463__col"><a href="https://www.rtsoft.ru" style="color:#ffffff;font-size:20px;font-weight:600;"><img class="t463__logo t463__img t-img" 
+src="images/tild3363-6461-4461-b266-353036373635__-__empty____.png" data-original="images/tild3363-6461-4461-b266-353036373635____.png" 
+imgfield="img"
+alt=""></a></div><div class="t463__col t463__col_center t-align_center"><div class="t463__typo t463__copyright t-name t-name_xs" field="text" style="color: #000000;color:#000000;"><span style="font-weight: 400; font-size: 22px;">✉</span><span style="font-weight: 400; font-size: 16px;"> rtsoft</span><a href="mailto:rtsoft@rtsoft.ru" style="color: rgb(0, 0, 0); font-weight: 400; font-size: 16px;">@rtsoft.</a><span style="font-weight: 400; font-size: 16px;">ru</span><br /><br /><span style="font-weight: 400; font-size: 16px;"> </span>☎<span style="font-size: 16px; font-weight: 400;">+7 499 271 32 48</span><br /><br /><span style="font-weight: 400; font-size: 16px;">⚑ Verkhnyaya Pervomayskaya str, 51, Moscow, 105264, Russia</span><br /><br /><br /><br /><span style="font-weight: 300;">Copyright © RTSoft. All rights reserved.</span></div></div><div class="t463__col t-align_right"><div class="t-sociallinks"><ul role="list" class="t-sociallinks__wrapper" aria-label="Social media links"><!-- new soclinks --><li class="t-sociallinks__item t-sociallinks__item_linkedin"><a href="https://www.linkedin.com/company/rtsoft-swdc/" target="_blank" rel="nofollow" aria-label="LinkedIn" title="LinkedIn" style="width: 30px; height: 30px;"><svg class="t-sociallinks__svg" role="presentation" width=30px height=30px viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.6142 0 50-22.3858 50-50S77.6142 0 50 0 0 22.3858 0 50s22.3858 50 50 50Zm23-31.0002V52.363c0-8.9114-4.7586-13.0586-11.1079-13.0586-5.1234 0-7.4123 2.8199-8.6942 4.7942v-4.1124h-9.6468c.1297 2.7235 0 29.0136 0 29.0136h9.6484v-16.203c0-.8675.0657-1.731.3203-2.3513.6981-1.7351 2.284-3.5286 4.9491-3.5286 3.4905 0 4.8859 2.6611 4.8859 6.5602v15.5227H73ZM53.1979 44.0986v.094h-.0632c.0069-.0111.0148-.0228.0229-.0346.0137-.0198.0281-.0401.0403-.0594ZM28 31.0123C28 28.1648 30.1583 26 33.4591 26c3.3016 0 5.3302 2.1648 5.3934 5.0123 0 2.7851-2.0918 5.0156-5.4567 5.0156h-.064c-3.2351 0-5.3318-2.2305-5.3318-5.0156Zm10.2177 37.9875h-9.6445V39.9862h9.6445v29.0136Z" fill="#000000"/></svg></a></li><!-- /new soclinks --></ul></div></div></div></div></div></div></div></div><!--/allrecords-->

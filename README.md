@@ -1,2 +1,0 @@
-# ritms.online
-Landing page.
